@@ -1,0 +1,33 @@
+<!--=======================================================-->
+<!-- Copyright (c) 2024. Alejandro Alberto Jiménez Brundin -->
+<!--=======================================================-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina el número</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/javascript/script.js"></script>
+</head>
+<body>
+    <button class="button" id="titulo" data-text="Awesome">
+        <span class="actual-text">&nbsp;Adivina el numero&nbsp;</span>
+        <span aria-hidden="true" class="hover-text">&nbsp;Adivina el numero&nbsp;</span>
+    </button>
+    <p class="hecho">Hecho por: Alejandro Alberto Jiménez Brundin</p>
+
+    <button type="button" id="iniciar" onclick="iniciar()">Iniciar</button>
+    <div id="contador">Tiempo: 0 segundos</div>
+    <div id="intentosFallidos">Intentos fallidos: 0</div> <!-- Contador de intentos fallidos -->
+
+    <label for="numero">Ingresa un número:</label>
+    <input type="number" name="numero" id="numero" disabled>
+    <button type="submit" id="enviar" disabled onclick="validarJuego()">Enviar adivinanza</button>
+    <p id="resultado"></p>
+</body>
+</html>
+
+<!--=======================================================-->
+<!-- Copyright (c) 2024. Alejandro Alberto Jiménez Brundin -->
+<!--=======================================================-->

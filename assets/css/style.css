@@ -1,0 +1,70 @@
+/*=======================================================
+Copyright (c) 2024. Alejandro Alberto Jiménez Brundin
+=======================================================*/
+body {
+    background-color: black;
+    color: rgb(0, 0, 0);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-image: url(../../assets/img/portada-22.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 97vh;
+}
+
+button {
+    cursor: pointer;
+}
+
+.hecho {
+    color: rgb(58, 52, 52);
+    font-size: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+#titulo {
+    align-items: center;
+    margin: 0;
+    margin-top: 25px;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    --border-right: 6px;
+    --text-stroke-color: rgba(58, 52, 52, 0.6);
+    --animation-color: #37FF8B;
+    --fs-size: 2em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+  }
+
+  .hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+  }
+
+  .button:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color));
+    cursor: pointer;
+  }
+/*=======================================================
+Copyright (c) 2024. Alejandro Alberto Jiménez Brundin
+=======================================================*/
